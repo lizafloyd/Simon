@@ -1,0 +1,42 @@
+
+#container{
+  width:550px;
+  margin:auto;
+  margin-top: 100px;
+}
+li.circle {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0 15px 15px 0;
+  border-radius: 60px;
+  border: 3px solid black;
+  list-style-type: none;
+}
+h1{
+  text-align: center;
+  margin-top: 100px;
+}
+button{
+  width:100px;
+  margin:auto;
+  margin-top:80px;
+}
+#pink{
+  background: pink;
+}
+#blue{
+  background: lightblue;
+}
+#yellow{
+  background: yellow;
+}
+#purple{
+  background: purple;
+}
+#green{
+  background: green;
+}
+.hidden{
+  background:white;
+}
