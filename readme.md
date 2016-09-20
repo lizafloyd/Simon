@@ -10,10 +10,10 @@ The takeaway lesson for me was in handling moments when I get blocked from makin
 
 ##Still To Do
 - Refactor code
-- Set up timeout if no guess is made
-- Fix link in input setup in lose.html (best practices)
-- Fix timing on later levels
-- Instructions
+- ~~Set up timeout if no guess is made~~
+- ~~Fix link in input setup in lose.html (best practices)~~ (Nick tells me to disregard re: validation)
+- ~~Fix timing on later levels~~
+- ~~Instructions~~
 
 ##Bonus to Do
 - Levels reward structure/Colors

@@ -1,20 +1,28 @@
 var compArray = []
 var userArray = []
 var level = 0
+var time
 
 function flip(id, delay){
   setTimeout(function(){
         $('#' + id).addClass('active')
     }, 1000*delay)
-    setTimeout(function(){
-        $('#' + id).removeClass('active')
-    }, 500+1000*delay)
+ if (delay < 10){
+      setTimeout(function(){
+          $('#' + id).removeClass('active')
+      }, 500+1000*delay)
+    } else {
+      setTimeout(function(){
+          $('#' + id).removeClass('active')
+      }, 500+250*delay)
+    }
   }
 
 $('.circle').on('click', pick)
 
 function pick(event) {
   event.preventDefault()
+  clearTimeout(time)
   var pick = $(this).attr('id')
   userArray.push(pick)
   console.log(userArray)
@@ -50,9 +58,16 @@ function compare() {
 }
 }
 
+function timeout(){
+  time = setTimeout(function (){
+  document.getElementById('lose').click()
+}, 10000)
+}
+
 function animate(){
   for (i=0; i<compArray.length; i++){
     flip(compArray[i],i)
+    timeout()
   }
 }
 
@@ -69,9 +84,7 @@ function lose(){
   var score = localStorage.getItem('value')
   console.log(score)
   console.log('test')
-  // debugger
   $('.score').attr('value', score)
-  // debugger
   compArray = []
   userArray = []
 }

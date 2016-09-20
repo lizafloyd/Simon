@@ -16,9 +16,14 @@ li.circle {
 }
 h1{
   text-align: center;
-  margin: 100px 0 0 0;
+  margin: 20px 0 0 0;
   font-family: 'Shadows Into Light', cursive;
   font-size: 100px;
+}
+h2{
+  text-align: center;
+  margin:0 0 30px 0;
+  font-family: 'Shadows Into Light', cursive;
 }
 a{
   text-decoration:none;
