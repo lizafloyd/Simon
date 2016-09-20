@@ -7,22 +7,15 @@
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 </head>
 	<body>
-    <h1>Simon</h1>
-    <div class='container'>
-	  <ul id="container">
-	    <li class='circle' id='pink'></li>
-	    <li class='circle' id='lightblue'></li>
-	    <li class='circle' id='yellow'></li>
-	    <li class='circle' id='purple'></li>
-      <li class='circle' id='green'></li>
+    <h1>You Lose</h1>
 	  </ul>
   </div>
    <div class='scoreboard'>
     <span>Level:</span><input class='score' type='text' value='0'></input>
-    <button type="button" id="play">Play</button>
-    <a id='lose' href="lose.html"></a>
+    <button type="button" id="playAgain"><a  href="index.html">Play Again</a></button>
   </div>
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src='main.js'></script>
+    <script>$('.score').val(localStorage.getItem('value'))</script>
 	</body>
 </html>

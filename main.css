@@ -2,7 +2,7 @@
 #container{
   width:550px;
   margin:auto;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 li.circle {
   float: left;
@@ -12,20 +12,47 @@ li.circle {
   border-radius: 60px;
   border: 3px solid black;
   list-style-type: none;
+  transition: all 500ms ease;
 }
 h1{
   text-align: center;
-  margin-top: 100px;
+  margin: 100px 0 0 0;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 100px;
 }
-button{
+a{
+  text-decoration:none;
+  color:black;
+}
+#play{
   width:100px;
   margin:auto;
   margin-top:80px;
+  padding:10px;
+}
+#playAgain{
+  width:100px;
+  margin:auto;
+  margin-top:80px;
+  padding:10px;
+}
+.score{
+  width: 70px;
+  height:30px;
+  margin:auto;
+}
+.scoreboard{
+  width:250px;
+  margin:auto;
+  clear:both;
+}
+span{
+  margin:10px
 }
 #pink{
   background: pink;
 }
-#blue{
+#lightblue{
   background: lightblue;
 }
 #yellow{
@@ -39,4 +66,7 @@ button{
 }
 .hidden{
   background:white;
+}
+li.active{
+  border: 10px solid black;
 }
