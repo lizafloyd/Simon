@@ -1,7 +1,7 @@
 var compArray = []
 var userArray = []
 var level = 0
-var time
+var timeoutID
 
 function flip(id, delay){
   setTimeout(function(){
@@ -16,16 +16,16 @@ function flip(id, delay){
           $('#' + id).removeClass('active')
       }, 500+250*delay)
     }
+  timeout()
   }
 
 $('.circle').on('click', pick)
 
 function pick(event) {
   event.preventDefault()
-  clearTimeout(time)
+  clearTimeout(timeoutID)
   var pick = $(this).attr('id')
   userArray.push(pick)
-  console.log(userArray)
   flip(pick, 0)
   setTimeout(function(){
         $(pick).addClass('active')
@@ -39,35 +39,27 @@ function play(){
     var colors = ['pink', 'lightblue', 'yellow', 'purple', 'green']
     var random = colors[Math.floor(Math.random() * colors.length)]
     compArray.push(random)
-    console.log(compArray)
     animate()
 }
 
 function compare() {
   if (compArray.length == userArray.length) {
   setTimeout(function(){
-    var same =  compArray.every(function(element, index){
-      return element === userArray[index]
-    })
-    if (same == true) {
-      nextLevel()
-    } else {
-      lose()
-    }
+    compArray.every(function(element, index){
+      return element === userArray[index] }) ? nextLevel() : lose()
   }, 800*level)
 }
 }
 
 function timeout(){
-  time = setTimeout(function (){
-  document.getElementById('lose').click()
-}, 10000)
+  timeoutID = setTimeout(function (){
+  lose()
+}, 5000)
 }
 
 function animate(){
   for (i=0; i<compArray.length; i++){
     flip(compArray[i],i)
-    timeout()
   }
 }
 
@@ -82,8 +74,6 @@ function nextLevel(){
 function lose(){
   document.getElementById('lose').click()
   var score = localStorage.getItem('value')
-  console.log(score)
-  console.log('test')
   $('.score').attr('value', score)
   compArray = []
   userArray = []
