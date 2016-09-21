@@ -23,9 +23,7 @@ function pick(event) {
   var pick = $(this).attr('id')
   userArray.push(pick)
   flip(pick, 0)
-  setTimeout(function(){
-        $(pick).addClass('active')
-    }, 1000)
+  setTimeout(function(){ $(pick).addClass('active')}, 1000)
   compare()
 }
 
@@ -70,8 +68,7 @@ function nextLevel(){
 
 function lose(){
   document.getElementById('lose').click()
-  var score = localStorage.getItem('value')
-  $('.score').attr('value', score)
+  $('.score').attr('value', localStorage.getItem('value'))
   compArray = []
   userArray = []
 }

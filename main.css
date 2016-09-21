@@ -75,3 +75,6 @@ span{
 li.active{
   border: 10px solid black;
 }
+.nerd{
+  background-image: url(http://www.tolkienion.com/movies/ttt/marshes4.jpg);
+}
