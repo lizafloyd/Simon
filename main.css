@@ -12,6 +12,7 @@ li.circle {
   border-radius: 60px;
   border: 3px solid black;
   list-style-type: none;
+  /* AM: Nice use of transition! */
   transition: all 500ms ease;
 }
 h1{
@@ -29,6 +30,8 @@ a{
   text-decoration:none;
   color:black;
 }
+
+/* AM: Looks like the next two selectors are exactly the same. Why dont you just combine them into one? */
 #play{
   width:100px;
   margin:auto;
