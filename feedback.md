@@ -9,17 +9,21 @@
 
 ## Code Comments:
 
-Please look through my pull request and read through the inline code comments I left for specific notes on your code. Here's the link if you need it.
+Please look through my pull request and read through the inline code comments I left for specific notes on your code. Here's the link if you need it. Please let me know if I can elaborate on any of these.
 
 ## Deployment:
 
 > Did you successfully deploy your project to github pages? Is the app's functionality the same deployed as it is locally?
 
+**3: Excelling.** The deployed app looks to function just like the local one!
+
 ## Technical Requirements:
 
 > Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
 
-**2: Performing.** If you get around to working on this project again, the next feature I would implement is so that if the user clicks on an incorrect circle, they are immediately taken to the "You Lose" page. This is as opposed to, for example, having to click 5 circles in Round 5 before it is determined whether the user has lost or not.
+**2: Performing.** Great job with this assignment. It has all of the functionality that I would look for in a Simon game. Sometimes I ran into bugs that probably resulted from me interacting with the app at the incorrect time, but these are things that can be fixed with more time and testing.
+
+If you get around to working on this project again, the next feature I would implement is so that if the user clicks on an incorrect circle, they are immediately taken to the "You Lose" page. This is as opposed to, for example, having to click 5 circles in Round 5 before it is determined whether the user has lost or not.
 
 ## Code Quality:
 
