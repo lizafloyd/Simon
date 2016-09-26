@@ -9,7 +9,9 @@
 
 ## Code Comments:
 
-Please look through my pull request and read through the inline code comments I left for specific notes on your code. Here's the link if you need it. Please let me know if I can elaborate on any of these.
+Please look through my pull request and read through the inline code comments I left for specific notes on your code. Please let me know if I can elaborate on any of these.
+
+[https://github.com/lizafloyd/Simon/pull/1](https://github.com/lizafloyd/Simon/pull/1)
 
 ## Deployment:
 
